@@ -1,10 +1,7 @@
-img {
-	width: 40%;
-}
-
 body {
 	color: #36454f;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Barlow", sans-serif;
+	/*font-size: 16px;*/
 }
 
 h1,
@@ -16,9 +13,8 @@ ul {
 }
 
 h1 {
-	display: block;
 	color: #155263;
-	font-size: 32px;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
@@ -27,6 +23,10 @@ li {
 	font-size: 18px;
 }
 
+strong {
+	font-size: 2.5em;
+	color: #155263;
+}
 .current-time {
 	font-size: 18px;
 	font-weight: bold;
@@ -38,7 +38,8 @@ li {
 	margin-bottom: 5px;
 	border: 2px solid #92c7d3;
 	border-radius: 10px;
-	padding: 20px;
+	padding: 15px;
+	padding-left: 20px;
 }
 
 .sign {
@@ -49,4 +50,28 @@ li {
 .align-items-end {
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.main-img {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.day-img {
+	display: block;
+	margin: 10px auto;
+	width: 40%;
+}
+
+.units {
+	font-size: 16px;
+	position: relative;
+	top: -16px;
+}
+
+.week-temperature {
+	font-weight: bolder;
+	/*	font-size: 1.2em;*/
+	padding-right: 0;
 }
