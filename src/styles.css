@@ -1,7 +1,52 @@
-.weather {
-	color: red;
-}
-
 img {
 	width: 40%;
+}
+
+body {
+	color: #36454f;
+	font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+img,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	display: block;
+	color: #155263;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+li {
+	list-style: none;
+	font-size: 18px;
+}
+
+.current-time {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.weather-app {
+	max-width: 600px;
+	margin: 30px auto;
+	margin-bottom: 5px;
+	border: 2px solid #92c7d3;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.sign {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.align-items-end {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
