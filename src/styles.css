@@ -26,6 +26,9 @@ h1 {
 li {
 	list-style: none;
 	font-size: 18px;
+}
+
+li:first-letter {
 	text-transform: capitalize;
 }
 
