@@ -25,10 +25,27 @@
 	<body>
 		<div class="container">
 			<div class="weather-app">
-				<form action="">
-					<input type="text" placeholder="Input a city" />
-					<input type="submit" />
-					<span>Pin</span>
+				<form id="search-form">
+					<div class="row">
+						<div class="col-8">
+							<input
+								type="search"
+								placeholder="Input a city"
+								id="city-input"
+								class="form-control"
+							/>
+						</div>
+						<div class="col-3">
+							<input
+								type="submit"
+								value="Search"
+								class="btn btn-primary w-100"
+							/>
+						</div>
+						<div class="col-1 pin">
+							<img src="src/pin.svg" class="pin-image" title="Pin" />
+						</div>
+					</div>
 				</form>
 
 				<!-- current city and date-->
