@@ -105,3 +105,16 @@ in-img {
 	/*	font-size: 1.2em;*/
 	padding-right: 0;
 }
+
+a {
+	text-decoration: none;
+}
+
+.active {
+	color: #36454f;
+	cursor: default;
+}
+
+.active:hover {
+	text-decoration: none;
+}
