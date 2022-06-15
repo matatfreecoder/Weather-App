@@ -18,6 +18,11 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="src/styles.css" />
 		<title>Weather App</title>
@@ -43,7 +48,10 @@
 							/>
 						</div>
 						<div class="col-1 pin">
-							<img src="src/pin.svg" class="pin-image" title="Pin" />
+							<!--
+								<img src="src/pin.svg" class="pin-image" title="Pin" />	
+							-->
+							<span class="material-symbols-outlined"> pin_drop </span>
 						</div>
 					</div>
 				</form>
@@ -81,60 +89,76 @@
 					</div>
 				</div>
 				<hr />
+				<div class="weather-forecast">
+					<!--day +1 weather conditions-->
+					<div class="row align-items-center">
+						<div class="col-2 week-temperature">
+							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">10°</span>
+						</div>
+						<div class="col-3">
+							<img src="src/hot.png" class="day-img" />
+						</div>
+						<div class="col-3">cloudly</div>
 
-				<!--day +1 weather conditions-->
-				<div class="row align-items-center">
-					<div class="col-2 week-temperature">20 °C</div>
-					<div class="col-3">
-						<img src="src/hot.png" class="day-img" />
+						<div class="col-4">Wednesday, 25 June</div>
 					</div>
-					<div class="col-3">cloudly</div>
 
-					<div class="col-4">Wednesday, 25 June</div>
-				</div>
+					<!--day +2 weather conditions-->
+					<div class="row align-items-center">
+						<div class="col-2 week-temperature">
+							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">10°</span>
+						</div>
+						<div class="col-3">
+							<img src="src/hot.png" class="day-img" />
+						</div>
+						<div class="col-3">cloudly</div>
 
-				<!--day +2 weather conditions-->
-				<div class="row align-items-center">
-					<div class="col-2 week-temperature">20 °C</div>
-					<div class="col-3">
-						<img src="src/hot.png" class="day-img" />
+						<div class="col-4">Wednesday, 25 June</div>
 					</div>
-					<div class="col-3">cloudly</div>
 
-					<div class="col-4">Wednesday, 25 June</div>
-				</div>
+					<!--day +3 weather conditions-->
+					<div class="row align-items-center">
+						<div class="col-2 week-temperature">
+							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">10°</span>
+						</div>
+						<div class="col-3">
+							<img src="src/hot.png" class="day-img" />
+						</div>
+						<div class="col-3">cloudly</div>
 
-				<!--day +3 weather conditions-->
-				<div class="row align-items-center">
-					<div class="col-2 week-temperature">20 °C</div>
-					<div class="col-3">
-						<img src="src/hot.png" class="day-img" />
+						<div class="col-4">Wednesday, 25 June</div>
 					</div>
-					<div class="col-3">cloudly</div>
 
-					<div class="col-4">Wednesday, 25 June</div>
-				</div>
+					<!--day +4 weather conditions-->
+					<div class="row align-items-center">
+						<div class="col-2 week-temperature">
+							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">10°</span>
+						</div>
+						<div class="col-3">
+							<img src="src/hot.png" class="day-img" />
+						</div>
+						<div class="col-3">cloudly</div>
 
-				<!--day +4 weather conditions-->
-				<div class="row align-items-center">
-					<div class="col-2 week-temperature">20 °C</div>
-					<div class="col-3">
-						<img src="src/hot.png" class="day-img" />
+						<div class="col-4">Wednesday, 25 June</div>
 					</div>
-					<div class="col-3">cloudly</div>
 
-					<div class="col-4">Wednesday, 25 June</div>
-				</div>
+					<!--day +5 weather conditions-->
+					<div class="row align-items-center">
+						<div class="col-2 week-temperature">
+							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">10°</span>
+						</div>
+						<div class="col-3">
+							<img src="src/hot.png" class="day-img" />
+						</div>
+						<div class="col-3">cloudly</div>
 
-				<!--day +5 weather conditions-->
-				<div class="row align-items-center">
-					<div class="col-2 week-temperature">20 °C</div>
-					<div class="col-3">
-						<img src="src/hot.png" class="day-img" />
+						<div class="col-4">Wednesday, 25 June</div>
 					</div>
-					<div class="col-3">cloudly</div>
-
-					<div class="col-4">Wednesday, 25 June</div>
 				</div>
 			</div>
 			<div class="sign">

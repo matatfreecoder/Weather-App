@@ -77,7 +77,7 @@ div.align-items-end {
 	margin-bottom: 15px;
 }
 
-in-img {
+main-img {
 	display: block;
 	margin: 0 auto;
 	width: 80%;
@@ -86,7 +86,7 @@ in-img {
 .day-img {
 	display: block;
 	margin: 10px auto;
-	width: 40%;
+	width: 50px;
 }
 
 .units {
@@ -96,9 +96,8 @@ in-img {
 }
 
 .week-temperature {
-	font-weight: bolder;
-	/*	font-size: 1.2em;*/
-	padding-right: 0;
+	font-size: 1.2em;
+	/*padding-right: 0;*/
 }
 
 a {
@@ -112,4 +111,19 @@ a {
 
 .active:hover {
 	text-decoration: none;
+}
+
+.weather-forecast-temperature-max {
+	font-weight: bold;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+	font-size: 44px;
+	color: #0c6b85;
+}
+
+.material-symbols-outlined:hover {
+	cursor: pointer;
+	color: #155263;
 }
