@@ -37,7 +37,8 @@ hr {
 input.btn {
 	background-color: #0c6b85;
 	border: #29859f;
-	font-size: 18px;
+	/*font-size: 1.2em;*/
+	padding: 6px;
 }
 
 input.btn:hover {
@@ -48,9 +49,6 @@ input.btn:hover {
 	padding-left: 0;
 }
 
-.pin-image {
-	width: 100%;
-}
 .current-time {
 	font-size: 18px;
 	font-weight: bold;
@@ -58,12 +56,12 @@ input.btn:hover {
 
 .weather-app {
 	max-width: 600px;
-	margin: 30px auto;
+	margin: 20px auto;
 	margin-bottom: 5px;
 	border: 2px solid #92c7d3;
 	border-radius: 10px;
-	padding: 15px;
-	padding-left: 20px;
+	padding: 10px;
+	padding-left: 15px;
 	background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
@@ -117,13 +115,12 @@ a {
 	font-weight: bold;
 }
 
-.material-symbols-outlined {
-	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-	font-size: 44px;
-	color: #0c6b85;
+.fa-location-pin {
+	color: #247291;
+	font-size: 2em;
 }
 
-.material-symbols-outlined:hover {
+.fa-location-pin:hover {
 	cursor: pointer;
 	color: #155263;
 }

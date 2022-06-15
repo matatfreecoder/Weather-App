@@ -47,7 +47,7 @@ function displayForecast() {
 							<span class="weather-forecast-temperature-min">10°</span>
 						</div>
 						<div class="col-3">
-							<img src="src/hot.png" class="day-img" />
+							<img src="src/hot1.png" class="day-img" />
 						</div>
 						<div class="col-3">cloudly</div>
 

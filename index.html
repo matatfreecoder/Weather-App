@@ -18,11 +18,10 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		/>
-
+		<script
+			src="https://kit.fontawesome.com/b0cfff2e4c.js"
+			crossorigin="anonymous"
+		></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="src/styles.css" />
 		<title>Weather App</title>
@@ -31,7 +30,7 @@
 		<div class="container">
 			<div class="weather-app">
 				<form id="search-form">
-					<div class="row">
+					<div class="row align-items-center">
 						<div class="col-8">
 							<input
 								type="search"
@@ -48,7 +47,11 @@
 							/>
 						</div>
 						<div class="col-1 pin">
-							<span class="material-symbols-outlined"> pin_drop </span>
+							<i
+								class="fa-solid fa-location-pin"
+								id="current-location"
+								title="Current location weather"
+							></i>
 						</div>
 					</div>
 				</form>
@@ -75,7 +78,7 @@
 						>
 					</div>
 					<div class="col-4">
-						<img src="src/hot.png" class="main-img" id="icon" />
+						<img src="src/hot1.png" class="main-img" id="icon" />
 					</div>
 					<div class="col-4">
 						<ul>
