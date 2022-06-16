@@ -163,6 +163,19 @@ function displaycelsiusTemperature(event) {
 	temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function showPositionWeather(position) {
+	let apiKey = "15b17c39bc6708ab7518942a1ffb9aca";
+	let lat = position.coords.latitude;
+	let lon = position.coords.longitude;
+	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+	axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+	event.preventDefault;
+	navigator.geolocation.getCurrentPosition(showPositionWeather);
+}
+
 let celsiusTemperature = null;
 search("kyiv");
 
@@ -174,3 +187,6 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displaycelsiusTemperature);
+
+let currentLocationPin = document.querySelector("#current-location");
+currentLocationPin.addEventListener("click", getCurrentLocation);
