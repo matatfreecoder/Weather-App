@@ -25,10 +25,12 @@ function formatDate(timestamp) {
 	return `${day}, ${hours}:${minutes}`;
 }
 
-function displayForecast(response) {
-	console.log(response.data.daily);
-	let forecastElement = document.querySelector("#forecast");
-	let forecastHTML = "";
+function formatDay(timestamp) {
+	let date = new Date(timestamp * 1000);
+	let weekDay = date.getDay();
+	let dateNumber = date.getDate();
+	let monthNumber = date.getMonth();
+
 	let days = [
 		"Sunday",
 		"Monday",
@@ -38,23 +40,55 @@ function displayForecast(response) {
 		"Friday",
 		"Saturday",
 	];
-	days.forEach(function (day) {
-		forecastHTML =
-			forecastHTML +
-			`
+
+	let months = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+	];
+
+	return `${days[weekDay]}, ${months[monthNumber]} ${dateNumber}`;
+}
+
+function displayForecast(response) {
+	let forecast = response.data.daily;
+	console.log(forecast);
+
+	let forecastElement = document.querySelector("#forecast");
+	let forecastHTML = "";
+
+	forecast.forEach(function (forecastDay, index) {
+		if (index < 6) {
+			forecastHTML += `
 	<div class="row align-items-center">
 						<div class="col-2 week-temperature">
-							<span class="weather-forecast-temperature-max">20°</span>&nbsp;
-							<span class="weather-forecast-temperature-min">10°</span>
+							<span class="weather-forecast-temperature-max">${Math.round(
+								forecastDay.temp.max
+							)}°</span>&nbsp;
+							<span class="weather-forecast-temperature-min">${Math.round(
+								forecastDay.temp.min
+							)}°</span>
 						</div>
 						<div class="col-3">
-							<img src="src/hot1.png" class="day-img" />
+							<img src="https://openweathermap.org/img/wn/${
+								forecastDay.weather[0].icon
+							}@2x.png" class="day-img" />
 						</div>
-						<div class="col-3">cloudly</div>
+						<div class="col-3 description">${forecastDay.weather[0].description}</div>
 
-						<div class="col-4">${day}, 25 June</div>
+						<div class="col-4">${formatDay(forecastDay.dt)}</div>
 					</div>
 	`;
+		}
 	});
 
 	forecastElement.innerHTML = forecastHTML;

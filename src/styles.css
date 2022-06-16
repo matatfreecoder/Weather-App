@@ -37,7 +37,6 @@ hr {
 input.btn {
 	background-color: #0c6b85;
 	border: #29859f;
-	/*font-size: 1.2em;*/
 	padding: 6px;
 }
 
@@ -61,7 +60,7 @@ input.btn:hover {
 	border: 2px solid #92c7d3;
 	border-radius: 10px;
 	padding: 10px;
-	padding-left: 15px;
+	padding-left: 20px;
 	background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
@@ -95,7 +94,6 @@ main-img {
 
 .week-temperature {
 	font-size: 1.2em;
-	/*padding-right: 0;*/
 }
 
 a {
@@ -123,4 +121,8 @@ a {
 .fa-location-pin:hover {
 	cursor: pointer;
 	color: #155263;
+}
+
+.description:first-letter {
+	text-transform: capitalize;
 }
