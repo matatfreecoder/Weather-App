@@ -67,7 +67,7 @@ function displayForecast(response) {
 	let forecastHTML = "";
 
 	forecast.forEach(function (forecastDay, index) {
-		if (index < 6) {
+		if (index < 7) {
 			forecastHTML += `
 	<div class="row align-items-center">
 						<div class="col-2 week-temperature">

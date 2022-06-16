@@ -61,7 +61,7 @@ input.btn:hover {
 	border-radius: 10px;
 	padding: 10px;
 	padding-left: 20px;
-	background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+	background: linear-gradient(60deg, #64b3f4a5 0%, #c2e59cbb 100%);
 }
 
 .sign {
